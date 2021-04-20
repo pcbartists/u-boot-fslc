@@ -1,0 +1,12 @@
+if TARGET_IMX6SOLOTRAINER
+
+config SYS_BOARD
+	default "imx6solotrainer"
+
+config SYS_VENDOR
+	default "pcbartists"
+
+config SYS_CONFIG_NAME
+	default "imx6solotrainer"
+
+endif

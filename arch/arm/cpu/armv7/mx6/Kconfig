@@ -235,6 +235,15 @@ config TARGET_MX6SXSABRESD
 	select DM_THERMAL
 	select BOARD_EARLY_INIT_F
 
+config TARGET_IMX6SOLOTRAINER
+	bool "imx6solotrainer"
+	select MX6SX
+	select SUPPORT_SPL
+	select DM
+	select DM_THERMAL
+	select BOARD_EARLY_INIT_F
+	select BOARD_LATE_INIT
+	
 config TARGET_MX6SXSABREAUTO
         bool "mx6sxsabreauto"
 	select BOARD_LATE_INIT
@@ -435,6 +444,7 @@ source "board/toradex/apalis_imx6/Kconfig"
 source "board/toradex/colibri_imx6/Kconfig"
 source "board/udoo/Kconfig"
 source "board/udoo/neo/Kconfig"
+source "board/pcbartists/imx6solotrainer/Kconfig"
 source "board/wandboard/Kconfig"
 source "board/warp/Kconfig"
 
